@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="site_title_header">Создание базы тестовых вопросов...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-translate-key="site_title_header">Создание базы тестовых вопросов по базам данных на компьютере и разработка программы для тестирования</h1>
+        <div id="lang-buttons"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate-key="nav_main">Главная</a></li>
+                <li><a href="about.html" data-translate-key="nav_about">О проекте</a></li>
+                <li><a href="questions_db.html" data-translate-key="nav_questions_db">База вопросов</a></li>
+                <li><a href="program.html" data-translate-key="nav_program">Программа тестирования</a></li>
+                <li><a href="results.html" data-translate-key="nav_results">Результаты</a></li>
+                <li><a href="create_test.html" data-translate-key="nav_create_test">Создать тест </a></li>
+                <li><a href="take_custom_test.html" data-translate-key="nav_take_custom_test">Пройти загруженный тест</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 data-translate-key="take_main_title">Пройти загруженный тест</h2>
+        <p data-translate-key="take_intro_p1">Загрузите файл с тестом (в формате .json), созданный на странице "Создать тест ".</p>
+        <div style="margin-bottom: 20px;">
+            <label for="uploadTestFile" style="display:block; margin-bottom: 5px; font-weight: bold;" data-translate-key="take_label_upload_file_strong">Выберите файл теста (.json):</label>
+            <input type="file" id="uploadTestFile" accept=".json" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <p id="fileFeedback" style="font-weight: bold; padding: 10px; border-radius: 4px; display:none;"></p>
+        <div id="loadedQuizArea" style="display:none; margin-top: 20px; padding: 20px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px;">
+            <h3 id="loadedQuizTitle" style="color: #0056b3;"></h3>
+            <div id="loadedQuizContainer" style="margin-top:15px;"></div>
+            <button id="submitLoadedQuizBtn" style="margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; display:none;">
+                Проверить ответы <!-- Этот текст НЕ будет переведен -->
+            </button>
+            <div id="loadedQuizResults" style="margin-top: 20px; font-weight: bold; padding:10px; border-radius:4px; display:none;"></div>
+        </div>
+    </main>
+    <footer>
+        <p data-translate-key="footer_copyright">© 2024. Сайт проекта.</p>
+    </footer>
+    <script src="translator.js"></script>
+    <script src="take_custom_test_logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="site_title_header">Создание базы тестовых вопросов...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-translate-key="site_title_header">Создание базы тестовых вопросов по базам данных на компьютере и разработка программы для тестирования</h1>
+        <div id="lang-buttons"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate-key="nav_main">Главная</a></li>
+                <li><a href="about.html" data-translate-key="nav_about">О проекте</a></li>
+                <li><a href="questions_db.html" data-translate-key="nav_questions_db">База вопросов</a></li>
+                <li><a href="program.html" data-translate-key="nav_program">Программа тестирования</a></li>
+                <li><a href="results.html" data-translate-key="nav_results">Результаты</a></li>
+                <li><a href="create_test.html" data-translate-key="nav_create_test">Создать тест </a></li>
+                <li><a href="take_custom_test.html" data-translate-key="nav_take_custom_test">Пройти загруженный тест</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 data-translate-key="create_main_title">Создание нового теста (демонстрационная версия)</h2>
+        <p style="background-color: #fffbe6; border: 1px solid #ffe58f; padding: 10px; border-radius: 5px;">
+            <strong data-translate-key="create_warning_p1_strong">Внимание:</strong>
+            <span data-translate-key="create_warning_p1_text">Тесты, созданные здесь, сохраняются только локально в вашем браузере. Для передачи теста другому человеку, используйте кнопку "Скачать тест (файл)".</span>
+        </p>
+        <div class="test-creation-form" style="margin-top: 20px;">
+            <div>
+                <label for="testTitle" style="display:block; margin-bottom:5px; font-weight:bold;" data-translate-key="create_label_test_title">Название теста:</label>
+                <input type="text" id="testTitle" name="testTitle" placeholder="Введите название вашего теста" data-translate-key="create_input_test_title_placeholder" style="width: 98%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div id="questionsContainer"></div>
+            <button type="button" id="addQuestionBtn" data-translate-key="create_btn_add_question" style="margin-top:15px; margin-bottom:15px; padding: 10px 15px; background-color: #28a745; color:white; border:none; border-radius:4px; cursor:pointer;">Добавить вопрос</button>
+            <hr style="margin-top: 20px; margin-bottom: 20px;">
+            <button type="button" id="saveTestBtn" data-translate-key="create_btn_save_test" style="margin-right: 10px; padding: 10px 15px; background-color: #007bff; color:white; border:none; border-radius:4px; cursor:pointer;">Сохранить тест (в браузере)</button>
+            <button type="button" id="exportTestBtn" data-translate-key="create_btn_export_test" style="margin-right: 10px; padding: 10px 15px; background-color: #ffc107; color:black; border:none; border-radius:4px; cursor:pointer;">Скачать тест (файл)</button>
+            <button type="button" id="previewTestBtn" data-translate-key="create_btn_preview_test" style="padding: 10px 15px; background-color: #17a2b8; color:white; border:none; border-radius:4px; cursor:pointer;">Предпросмотр созданного теста</button>
+            <p id="feedbackMessage" style="margin-top:15px; font-weight: bold; padding: 10px; border-radius: 4px; display:none;"></p>
+        </div>
+        <hr style="margin-top: 30px; margin-bottom: 30px; border: 0; border-top: 2px solid #eee;">
+        <div id="testPreviewArea" style="display:none; padding: 20px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px;">
+            <h3><strong data-translate-key="create_preview_area_title_strong">Предпросмотр теста:</strong> <span id="previewTestTitle" style="color: #0056b3;"></span></h3>
+            <div id="previewQuizContainer" style="margin-top:15px;"></div>
+            <button id="submitPreviewBtn" style="margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; display:none;">
+                Проверить ответы (предпросмотр) <!-- Этот текст НЕ будет переведен -->
+            </button>
+            <div id="previewQuizResults" style="margin-top: 20px; font-weight: bold; padding:10px; border-radius:4px;"></div>
+        </div>
+    </main>
+    <footer style="margin-top: 50px;">
+        <p data-translate-key="footer_copyright">© 2024. Сайт проекта.</p>
+    </footer>
+    <script src="translator.js"></script>
+    <script src="create_test_logic.js"></script>
+</body>
+</html>

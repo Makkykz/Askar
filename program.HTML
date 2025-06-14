@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="site_title_header">Создание базы тестовых вопросов...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-translate-key="site_title_header">Создание базы тестовых вопросов по базам данных на компьютере и разработка программы для тестирования</h1>
+        <div id="lang-buttons"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate-key="nav_main">Главная</a></li>
+                <li><a href="about.html" data-translate-key="nav_about">О проекте</a></li>
+                <li><a href="questions_db.html" data-translate-key="nav_questions_db">База вопросов</a></li>
+                <li><a href="program.html" data-translate-key="nav_program">Программа тестирования</a></li>
+                <li><a href="results.html" data-translate-key="nav_results">Результаты</a></li>
+                <li><a href="create_test.html" data-translate-key="nav_create_test">Создать тест </a></li>
+                <li><a href="take_custom_test.html" data-translate-key="nav_take_custom_test">Пройти загруженный тест</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 data-translate-key="program_main_title">Программа для тестирования</h2>
+        <section id="program-functionality">
+            <h3 data-translate-key="program_func_title">Основные возможности программы</h3>
+            <p data-translate-key="program_func_p1">[RU] Разработанная программа предназначена для проведения...</p>
+            <ul>
+                <li data-translate-key="program_func_li1">[RU] Аутентификация пользователя.</li>
+                <li data-translate-key="program_func_li2">[RU] Выбор теста.</li>
+                <li data-translate-key="program_func_li3">[RU] Прохождение теста.</li>
+                <li data-translate-key="program_func_li4">[RU] Отображение результатов.</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="program-screenshots">
+            <h3 data-translate-key="program_interface_title">Интерфейс программы</h3>
+            <p data-translate-key="program_interface_p1">[RU] Ниже представлены скриншоты основных окон программы.</p>
+            <figure class="screenshot-item">
+                <img src="images/screenshot_main_window.png" alt="Главное окно программы" data-translate-key="program_scr1_alt" style="max-width: 100%; border: 1px solid #ccc;">
+                <figcaption data-translate-key="program_scr1_caption">[RU] Рис. 1 - Пример: Главное окно программы.</figcaption>
+            </figure>
+            <figure class="screenshot-item">
+                <img src="images/screenshot_testing_process.png" alt="Окно прохождения теста" data-translate-key="program_scr2_alt" style="max-width: 100%; border: 1px solid #ccc;">
+                <figcaption data-translate-key="program_scr2_caption">[RU] Рис. 2 - Пример: Окно прохождения теста.</figcaption>
+            </figure>
+            <figure class="screenshot-item">
+                <img src="images/screenshot_results_window.png" alt="Окно результатов тестирования" data-translate-key="program_scr3_alt" style="max-width: 100%; border: 1px solid #ccc;">
+                <figcaption data-translate-key="program_scr3_caption">[RU] Рис. 3 - Пример: Окно результатов.</figcaption>
+            </figure>
+            <style> /* Эти стили только для этой страницы, если не хочешь добавлять в общий style.css */
+                .screenshot-item { margin-bottom: 25px; text-align: center; }
+                .screenshot-item img { display: block; margin-left: auto; margin-right: auto; margin-bottom: 8px; }
+                .screenshot-item figcaption { font-style: italic; font-size: 0.9em; color: #555; }
+            </style>
+        </section>
+        <hr>
+        <section id="development-tech">
+            <h3 data-translate-key="program_devtech_title">Технологии разработки программы</h3>
+            <p data-translate-key="program_devtech_p1">[RU] Программа для тестирования была разработана с использованием:</p>
+            <p><strong data-translate-key="program_devtech_lang_strong">Язык программирования:</strong> <span data-translate-key="program_devtech_lang_text">[Твой язык, например, Python 3].</span><br>
+            <strong data-translate-key="program_devtech_gui_strong">Графический интерфейс (GUI):</strong> <span data-translate-key="program_devtech_gui_text">[Твоя библиотека, например, Tkinter].</span><br>
+            <strong data-translate-key="program_devtech_db_strong">Взаимодействие с базой данных:</strong> <span data-translate-key="program_devtech_db_text">[Твой способ, например, модуль sqlite3 для Python].</span></p>
+        </section>
+        <hr>
+        <section id="demo-test">
+            <h3 data-translate-key="program_demo_test_title">Демонстрационный мини-тест</h3>
+            <p data-translate-key="program_demo_test_p1">Это простой пример теста, реализованный на JavaScript, чтобы показать принцип работы. Реальная программа тестирования является отдельным приложением.</p>
+            <div id="quiz-container"></div>
+            <button id="submit-quiz-btn" style="margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Проверить ответы <!-- Этот текст НЕ будет переведен текущим translator.js -->
+            </button>
+            <div id="quiz-results" style="margin-top: 20px; font-weight: bold;"></div>
+        </section>
+    </main>
+    <footer>
+        <p data-translate-key="footer_copyright">© 2024. Сайт проекта.</p>
+    </footer>
+    <script src="translator.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

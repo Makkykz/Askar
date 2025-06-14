@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="site_title_header">Создание базы тестовых вопросов...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-translate-key="site_title_header">Создание базы тестовых вопросов по базам данных на компьютере и разработка программы для тестирования</h1>
+        <div id="lang-buttons"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate-key="nav_main">Главная</a></li>
+                <li><a href="about.html" data-translate-key="nav_about">О проекте</a></li>
+                <li><a href="questions_db.html" data-translate-key="nav_questions_db">База вопросов</a></li>
+                <li><a href="program.html" data-translate-key="nav_program">Программа тестирования</a></li>
+                <li><a href="results.html" data-translate-key="nav_results">Результаты</a></li>
+                <li><a href="create_test.html" data-translate-key="nav_create_test">Создать тест </a></li>
+                <li><a href="take_custom_test.html" data-translate-key="nav_take_custom_test">Пройти загруженный тест</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 data-translate-key="qdb_main_title">База тестовых вопросов</h2>
+        <section id="db-structure">
+            <h3 data-translate-key="qdb_structure_title">Структура базы данных</h3>
+            <p data-translate-key="qdb_structure_p1">[RU] Для хранения тестовых материалов была спроектирована...</p>
+            <ul>
+                <li data-translate-key="qdb_table_questions">[RU] <strong>Questions (Вопросы):</strong> содержит текст вопроса...</li>
+                <li data-translate-key="qdb_table_answers">[RU] <strong>Answers (Ответы):</strong> содержит варианты ответов...</li>
+                <li data-translate-key="qdb_table_topics">[RU] <strong>Topics (Темы):</strong> справочник тем...</li>
+            </ul>
+            <p>
+                <!-- <strong data-translate-key="qdb_er_diagram_strong">Схема базы данных (ER-диаграмма):</strong><br>
+                <img src="images/er_diagram.png" alt="ER-диаграмма базы данных" data-translate-key="qdb_er_diagram_alt" style="max-width: 600px; border: 1px solid #ccc; margin-top: 10px;"> -->
+            </p>
+        </section>
+        <hr>
+        <section id="question-types">
+            <h3 data-translate-key="qdb_types_title">Типы вопросов</h3>
+            <p data-translate-key="qdb_types_p1">[RU] База данных и программа тестирования поддерживают...</p>
+            <ul>
+                <li data-translate-key="qdb_type_single">[RU] Одиночный выбор.</li>
+                <li data-translate-key="qdb_type_multiple">[RU] Множественный выбор.</li>
+                <li data-translate-key="qdb_type_text_input">[RU] Ввод текстового ответа.</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="question-examples">
+            <h3 data-translate-key="qdb_examples_title">Примеры вопросов</h3>
+            <div class="question-example">
+                <p><strong data-translate-key="qdb_example1_q">[RU] Вопрос (Одиночный выбор): Какая SQL команда используется для выбора данных из таблицы?</strong></p>
+                <ul>
+                    <li data-translate-key="qdb_example1_a1">A) UPDATE</li>
+                    <li data-translate-key="qdb_example1_a2">B) INSERT</li>
+                    <li data-translate-key="qdb_example1_a3">C) SELECT <em>(Правильный ответ)</em></li>
+                    <li data-translate-key="qdb_example1_a4">D) DELETE</li>
+                </ul>
+            </div>
+            <div class="question-example">
+                 <p><strong data-translate-key="qdb_example2_q">[RU] Вопрос (Множественный выбор): Какие из перечисленных являются типами данных в SQL?</strong></p>
+                <ul>
+                    <li data-translate-key="qdb_example2_a1">A) INTEGER <em>(Правильный ответ)</em></li>
+                    <li data-translate-key="qdb_example2_a2">B) LOOP</li>
+                    <li data-translate-key="qdb_example2_a3">C) VARCHAR <em>(Правильный ответ)</em></li>
+                    <li data-translate-key="qdb_example2_a4">D) IF-THEN-ELSE</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="db-technology">
+            <h3 data-translate-key="qdb_db_tech_title">Используемая СУБД</h3>
+            <p data-translate-key="qdb_db_tech_p1">[RU] Для создания и управления базой тестовых вопросов была использована СУБД <strong>SQLite</strong>.</p>
+        </section>
+    </main>
+    <footer>
+        <p data-translate-key="footer_copyright">© 2024. Сайт проекта.</p>
+    </footer>
+    <script src="translator.js"></script>
+</body>
+</html>
